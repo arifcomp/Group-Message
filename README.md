@@ -16,4 +16,9 @@ Group Message is a web-based chat application built using the  (MongoDB, Express
 - **Backend:** Node.js and Express.js for server-side development and API endpoints.
 - **Database:** MongoDB for storing user data, groups, and messages.
 
+**Members**
+
+Arif : Backend
+Ankan : Frontend
+Sanmitra : Backend
 
