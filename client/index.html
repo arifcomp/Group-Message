@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Messanger</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header_div">
+      <div class="navbar_div">
+        <div class="title_div"><h1>Chat</h1></div>
+        <div class="loginfo_div"></div>
+      </div>
+    </div>
+
+    <div class="body_div">
+      <div class="log_overlay login_overlay">
+        <div class="log_area">
+          <h2>Login</h2>
+          <form id="loginForm">
+            <input
+              class="log_input"
+              type="email"
+              id="emailLoginId"
+              placeholder="Enter Email"
+              name="email"
+            /><br />
+            <input
+              class="log_input log_password"
+              type="password"
+              id="passwordLoginId"
+              placeholder="Enter Password"
+              name="password"
+            />
+            <br />
+            <center>
+              <button type="submit" id="buttonLoginId" disabled>Sign In</button>
+            </center>
+            <p id="statusLoginId"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="log_overlay register_overlay">
+        <div class="log_area">
+          <h2>Register</h2>
+          <form id="registerForm">
+            <input
+              class="log_input"
+              type="text"
+              id="emailRegisterId"
+              placeholder="Enter Email"
+              name="email"
+            /><br />
+            <input
+              class="log_input"
+              type="text"
+              id="nameRegisterId"
+              placeholder="Enter Name"
+              name="name"
+            /><br />
+            <input
+              class="log_input"
+              type="password"
+              id="passwordRegisterId"
+              placeholder="Enter Password"
+              name="password"
+            /><br />
+            <center>
+              <button type="submit" id="buttonRegisterId" disabled>
+                Sign Up
+              </button>
+            </center>
+            <p id="statusRegisterId"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="messages_div"></div>
+    </div>
+
+    <div class="footer_div">
+      <form class="type_form">
+        <input
+          class="type_input"
+          id="typeInput"
+          placeholder="type here.."
+          autocomplete="off"
+        />
+        <button class="type_button">
+          <img
+            src="assets/sendBtn.png"
+            width="30px"
+            style="margin: 0; margin-top: 5px"
+          />
+        </button>
+      </form>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
